@@ -55,6 +55,6 @@ Expected demo: v1 documents both criteria; v2 retains Unicode export but explici
 
 MIT license. Transport receipt verification is adapted from this author's Semantic Proposal Registry project; the contract state machine and application are a distinct release-evidence use case.
 
-### Browser verification limit
+### Published browser verification
 
-The CLI integration cases and unit tests above passed. The initial browser UI attempt could not connect to the local preview server, so browser rendering, mobile layout and the UI write button remain unverified until an accessible preview is tested. Do not interpret the CLI result as a UI pass.
+The published app at https://release-evidence-gate-neo7391z.compassionateibex.chatgpt.site/ was tested on 2026-11-16. Live reads, empty-input rejection, disabled duplicate-run control, refresh during an isolated run, and JSON disclosure passed. A fresh isolated browser deployment and audit both finalized; the app rendered BLOCKED with MET/NOT_MET criterion results. Exact transaction hashes and scope are in `evidence/browser-qa.md`. Mobile viewport and simulated network-failure tests were not performed.
