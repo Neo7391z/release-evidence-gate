@@ -1,0 +1,22 @@
+{
+  "network": "Hosted Studionet simulator (not production validator network)",
+  "chainId": 61999,
+  "address": "0x1D840fc6A83b7a093f05C1158EC6D416CD447016",
+  "owner": "0x2e16e85B5Af41C7485D264efc472Fa9B38227a01",
+  "sourceSha256": "54ffbe8cea6860ef69939ccb91b81de14ef90d2dba410d0a18c12c4edc9a385c",
+  "ledger": {
+    "owner": "0x2e16e85B5Af41C7485D264efc472Fa9B38227a01",
+    "criteria": [
+      "CSV export preserves Unicode.",
+      "Cancelled exports create no download."
+    ],
+    "revision": 2,
+    "releases": [
+      "v1",
+      "v2"
+    ],
+    "capacity": 20
+  },
+  "validatedAt": "2026-11-16T13:41:14.922Z",
+  "studio": "https://studio.genlayer.com/?import-contract=0x1D840fc6A83b7a093f05C1158EC6D416CD447016"
+}

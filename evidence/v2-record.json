@@ -1,0 +1,39 @@
+{
+  "audit": {
+    "items": [
+      {
+        "evidence_index": 0,
+        "index": 0,
+        "quote": "CSV export preserved café and 東京.",
+        "verdict": "MET"
+      },
+      {
+        "evidence_index": 0,
+        "index": 1,
+        "quote": "BUG: cancelling an export still generated a downloaded CSV file.",
+        "verdict": "NOT_MET"
+      }
+    ]
+  },
+  "criteria": [
+    "CSV export preserves Unicode.",
+    "Cancelled exports create no download."
+  ],
+  "documents": [
+    {
+      "source": "https://example.org/synthetic-release-test",
+      "text": "CSV export preserved café and 東京. BUG: cancelling an export still generated a downloaded CSV file."
+    }
+  ],
+  "id": "v2",
+  "parent": "v1",
+  "regressions": [
+    1
+  ],
+  "revision": 1,
+  "scope": "Documentary support only; source authenticity and execution not verified",
+  "sha256": [
+    "0e7be4df7fb27f0574088c3e448547f1f653624ef04b572a9c4ee6a2e22f4a7f"
+  ],
+  "status": "BLOCKED"
+}

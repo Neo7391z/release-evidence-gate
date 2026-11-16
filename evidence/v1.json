@@ -1,0 +1,104 @@
+{
+  "hash": "0x857d0e9681ef5f177606dfda967c37e5583d74fff7dd954ce1799d1f15f1ce77",
+  "sourceSha256": "54ffbe8cea6860ef69939ccb91b81de14ef90d2dba410d0a18c12c4edc9a385c",
+  "consensus": {
+    "agree": 3,
+    "disagree": 0,
+    "idle": 2,
+    "total": 5,
+    "independentAgree": 2,
+    "leaderAddress": "0xd608c9abb63f1776c7f0ee447194d8d7ea441b8b",
+    "unanimous": false
+  },
+  "transaction": {
+    "hash": "0x857d0e9681ef5f177606dfda967c37e5583d74fff7dd954ce1799d1f15f1ce77",
+    "from_address": "0x2e16e85B5Af41C7485D264efc472Fa9B38227a01",
+    "to_address": "0x1D840fc6A83b7a093f05C1158EC6D416CD447016",
+    "status": "FINALIZED",
+    "result": 6,
+    "result_name": "MAJORITY_AGREE",
+    "leader_only": false,
+    "execution_mode": "NORMAL",
+    "num_of_initial_validators": 5,
+    "consensus_data": {
+      "votes": {
+        "0x174A9261a34D502212bE59deB3319508b9ff0fD7": "idle",
+        "0x364A7fb8bf37b1D388c4A81B4b109d91334dC9fd": "agree",
+        "0xDc5B687ca37c3C65a16Dd456e6Ce4CF8Be2FfC9d": "idle",
+        "0xc4Ab6B9D74c72EB38D43645318Bb4aFb518a09be": "agree",
+        "0xd608c9ABb63F1776c7F0EE447194d8D7ea441b8b": "agree"
+      },
+      "leader_receipt": [
+        {
+          "mode": "leader",
+          "vote": null,
+          "execution_result": "SUCCESS",
+          "node_config": {
+            "address": "0xd608c9ABb63F1776c7F0EE447194d8D7ea441b8b"
+          },
+          "genvm_result": {
+            "error_code": null
+          }
+        },
+        {
+          "mode": "validator",
+          "vote": "agree",
+          "execution_result": "SUCCESS",
+          "node_config": {
+            "address": "0xd608c9ABb63F1776c7F0EE447194d8D7ea441b8b"
+          },
+          "genvm_result": {
+            "error_code": null
+          }
+        }
+      ],
+      "validators": [
+        {
+          "mode": "validator",
+          "vote": "agree",
+          "execution_result": "SUCCESS",
+          "node_config": {
+            "address": "0xc4Ab6B9D74c72EB38D43645318Bb4aFb518a09be"
+          },
+          "genvm_result": {
+            "error_code": null
+          }
+        },
+        {
+          "mode": "validator",
+          "vote": "idle",
+          "execution_result": "ERROR",
+          "node_config": {
+            "address": "0x174A9261a34D502212bE59deB3319508b9ff0fD7"
+          },
+          "genvm_result": {
+            "error_code": "CONSENSUS_VALIDATOR_QUORUM_REACHED"
+          }
+        },
+        {
+          "mode": "validator",
+          "vote": "agree",
+          "execution_result": "SUCCESS",
+          "node_config": {
+            "address": "0x364A7fb8bf37b1D388c4A81B4b109d91334dC9fd"
+          },
+          "genvm_result": {
+            "error_code": null
+          }
+        },
+        {
+          "mode": "validator",
+          "vote": "idle",
+          "execution_result": "ERROR",
+          "node_config": {
+            "address": "0xDc5B687ca37c3C65a16Dd456e6Ce4CF8Be2FfC9d"
+          },
+          "genvm_result": {
+            "error_code": "CONSENSUS_VALIDATOR_QUORUM_REACHED"
+          }
+        }
+      ]
+    }
+  },
+  "receiptProjection": "Only fields required for verification; query public RPC for full receipt"
+}

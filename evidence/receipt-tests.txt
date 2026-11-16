@@ -1,0 +1,27 @@
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> release-evidence-gate@0.1.0 test
+> node --test tests/*.test.mjs
+
+✔ successful majority preserves dissent (1.454494ms)
+✔ quorum cancellation is not dissent or agreement (0.219349ms)
+✔ unanimity only if all five agree (0.211047ms)
+✔ reject nonfinal (0.322995ms)
+✔ reject failed leader (0.168663ms)
+✔ reject failed validator (0.161072ms)
+✔ reject duplicate validator (0.132579ms)
+✔ reject missing receipt (0.255874ms)
+✔ reject leader only (0.975474ms)
+✔ reject vote mismatch (0.276876ms)
+✔ reject unexplained idle (0.162874ms)
+✔ reject invalid result (0.156115ms)
+✔ reject missing identity (0.1531ms)
+✔ reject minority agreement (0.152409ms)
+ℹ tests 14
+ℹ suites 0
+ℹ pass 14
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 135.351785

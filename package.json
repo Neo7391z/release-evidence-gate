@@ -1,0 +1,22 @@
+{
+  "name": "release-evidence-gate",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "demo": "node scripts/demo.mjs",
+    "test": "node --test tests/*.test.mjs",
+    "serve": "python3 -m http.server 4184 --directory web",
+    "build": "esbuild web/app.js --bundle --format=iife --platform=browser --minify --outfile=web/bundle.js"
+  },
+  "dependencies": {
+    "genlayer-js": "1.1.8",
+    "viem": "2.57.19"
+  },
+  "engines": {
+    "node": ">=24"
+  },
+  "devDependencies": {
+    "esbuild": "0.28.2"
+  }
+}
